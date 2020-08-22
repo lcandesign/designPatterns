@@ -14,33 +14,33 @@ public class BaseAppSystem {
     public void run() {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Introduce el importe del préstamo: ");
+        System.out.print("Introduce el importe del pr�stamo: ");
         while(!scan.hasNextDouble()) {
-            System.out.print("Ingrese un valor válido: ");
+            System.out.print("Ingrese un valor valido: ");
             scan.next();
         }
         setAmount(scan.nextDouble());
 
-        System.out.print("Introduce el monto de interés anual (TNA): ");
+        System.out.print("Introduce el monto de inter�s anual (TNA): ");
         while(!scan.hasNextDouble()) {
-            System.out.print("Ingrese un valor válido: ");
+            System.out.print("Ingrese un valor valido: ");
             scan.next();
         }
         setInterests(scan.nextDouble());
 
         System.out.print("Introduce la cantidad de cuotas: ");
         while(!scan.hasNextInt()) {
-            System.out.print("Ingrese un valor válido: ");
+            System.out.print("Ingrese un valor valido: ");
             scan.next();
         }
         setPayment(scan.nextInt());
 
-        System.out.println("Indique el número del sistema de amortización a usar: ");
+        System.out.println("Indique el n�mero del sistema de amortizaci�n a usar: ");
         System.out.print(AmortizationSystem.getAllAmortizationSystems());
         int number;
         do {
             while(!scan.hasNextInt()) {
-                System.out.print("Ingrese un valor válido: ");
+                System.out.print("Ingrese un valor valido: ");
                 scan.next();
             }
             number = scan.nextInt();

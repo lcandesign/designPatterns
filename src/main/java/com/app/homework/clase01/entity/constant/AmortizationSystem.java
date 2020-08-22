@@ -18,7 +18,7 @@ public enum AmortizationSystem {
 
     public static String getNameByKey(int key){
         for(AmortizationSystem e : AmortizationSystem.values()){
-            if(key == Integer.valueOf(e.key)) return e.name();
+            if(key == Integer.parseInt(e.key)) return e.name();
         }
         return null;
     }

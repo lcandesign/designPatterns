@@ -22,7 +22,7 @@ public class GermanySystem implements CreditSystem {
 
         Map<Integer, Double> creditDetail = new TreeMap<Integer, Double>();
         for (int i = 1 ; i <= this.payments ; i++){
-            creditDetail.put(i,this.amount * (interestsByMonth/100) + capital);
+            creditDetail.put(i,Math.round((this.amount * (interestsByMonth/100) + capital) * 100.0) / 100.0);
             this.amount -= capital;
         }
         return creditDetail;

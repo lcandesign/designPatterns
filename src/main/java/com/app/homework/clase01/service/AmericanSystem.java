@@ -24,7 +24,7 @@ public class AmericanSystem implements CreditSystem {
 
         Map<Integer, Double> creditDetail = new TreeMap<Integer, Double>();
         for (int i = 1 ; i <= this.payments ; i++){
-            creditDetail.put(i,annualQuota);
+            creditDetail.put(i,Math.round(annualQuota * 100.0) / 100.0);
         }
         creditDetail.put(this.payments, finalQuota);
         return creditDetail;
