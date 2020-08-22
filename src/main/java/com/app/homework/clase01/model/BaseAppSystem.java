@@ -1,5 +1,6 @@
-package com.app.homework.clase01;
+package com.app.homework.clase01.model;
 
+import com.app.homework.clase01.calculeCredit;
 import com.app.homework.clase01.entity.constant.AmortizationSystem;
 
 import java.util.Scanner;
@@ -35,7 +36,7 @@ public class BaseAppSystem {
         setPayment(scan.nextInt());
 
         System.out.println("Indique el número del sistema de amortización a usar: ");
-        System.out.print(AmortizationSystem.SISTEMA_ALEMAN.getAllAmortizationSystems());
+        System.out.print(AmortizationSystem.getAllAmortizationSystems());
         int number;
         do {
             while(!scan.hasNextInt()) {

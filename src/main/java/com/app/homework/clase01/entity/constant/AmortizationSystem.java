@@ -16,7 +16,13 @@ public enum AmortizationSystem {
         return key;
     }
 
-    public String getAllAmortizationSystems(){
+    public static String getNameByKey(int key){
+        for(AmortizationSystem e : AmortizationSystem.values()){
+            if(key == Integer.valueOf(e.key)) return e.name();
+        }
+        return null;
+    }
+    public static String getAllAmortizationSystems(){
         StringBuilder data = new StringBuilder();
         String separator = " - ";
         for (AmortizationSystem value: AmortizationSystem.values()) {

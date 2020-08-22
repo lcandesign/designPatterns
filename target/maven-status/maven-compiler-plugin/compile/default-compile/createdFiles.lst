@@ -6,4 +6,4 @@ com\app\homework\clase01\service\CreditSystem.class
 com\app\homework\clase01\service\FrenchSystem.class
 com\app\homework\clase01\calculeCredit.class
 com\app\homework\clase01\entity\constant\AmortizationSystem.class
-com\app\homework\clase01\BaseAppSystem.class
+com\app\homework\clase01\model\BaseAppSystem.class
